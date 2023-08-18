@@ -1,0 +1,116 @@
+:root {
+  --dark: #9db2bf;
+  --darker: #526d82;
+  --darkest: #27374d;
+  --gray: #6b7280;
+  --light: #dde6ed;
+  --cyan: #00ffd5;
+  --purple: #35155d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--purple);
+  color: #ffff;
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  /* font-weight: 300; */
+  margin-bottom: 1.5rem;
+  color: var(--light);
+}
+
+#New-Task-Form {
+  display: flex;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#New-Task-Input {
+  flex: 1 1 0%;
+  background: var(--darker);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: var(--light);
+  font-size: 1.1rem;
+}
+
+#New-Task-Input::placeholder {
+  color: var(--light);
+  font-size: 1.1rem;
+}
+
+#New-Task-Submit {
+  color: var(--cyan);
+  font-size: 1.1rem;
+  font-weight: 800;
+  background-image: linear-gradient(to top, var(--cyan), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#New-Task-Submit:hover {
+  opacity: 0.9;
+}
+
+#New-Task-Submit:active {
+  opacity: 0.1;
+}
+
+main {
+  flex: 1 1 0%;
+  padding: 2rem 1 rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Task-List {
+  padding: 1rem;
+}
+
+.Task-List h2 {
+  font-size: 1.5rem;
+  /* font-weight: 100; */
+  color: var(--light);
+  margin-bottom: 1rem;
+}
+
+#Tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkest);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+#Tasks .task .content .text{
+    color: var(--light);
+}
