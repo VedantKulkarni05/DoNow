@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoNow</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Create A New Task</h1>
+      <form id="New-Task-Form">
+        <input type="text" id="New-Task-Form" placeholder="Task Title" />
+        <input type="submit" id="New-Task-submit" placeholder="Add Task" />
+      </form>
+    </header>
+    <main>
+      <section class="Task-List">
+        <h2>Tasks</h2>
+        <div id="Tasks">
+          <div class="task">
+            <div class="content">
+              <input type="text" class="text" value="My Todays Tasks"readonly/>
+            </div>
+             <div class="action">
+                <button class="edit">Edit</button>
+                <button class="Delete">Delete</button>
+             </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
