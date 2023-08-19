@@ -112,12 +112,15 @@ main {
 #Tasks .task {
   display: flex;
   justify-content: space-between;
-  background-color: var(--darkest);
+  background-color: var(--dark);
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
 
+#Tasks .task .content {
+  flex: 1 1 0%; 
+}
 #Tasks .task .content .text {
   color: var(--light);
   font-size: 1rem;
