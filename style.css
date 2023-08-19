@@ -19,8 +19,17 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: var(--purple);
-  color: #ffff;
+  background: #003973; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #e5e5be,
+    #003973
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #e5e5be,
+    #003973
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header {
@@ -68,9 +77,7 @@ button {
   color: var(--cyan);
   font-size: 1.1rem;
   font-weight: 800;
-  background-image: linear-gradient(to top, var(--cyan), var(--purple));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to top, var(--cyan));
   cursor: pointer;
   transition: 0.4s;
 }
@@ -111,6 +118,43 @@ main {
   margin-bottom: 1rem;
 }
 
-#Tasks .task .content .text{
-    color: var(--light);
+#Tasks .task .content .text {
+  color: var(--light);
+  font-size: 1rem;
+  width: 100%;
+  display: block;
+  transform: 0.4s;
+}
+
+#Tasks .task .content .text:not(:read-only) {
+  color: var(--cyan);
+}
+
+#Tasks .task .action {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .action button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 800;
+  transition: 0.4s;
+}
+
+.task .action button:hover {
+  opacity: 0.9;
+}
+
+.task .action button:active {
+  opacity: 0.1;
+}
+
+.task .action .edit {
+  color: var(--cyan);
+}
+
+.task .action .Delete {
+  color: var(--gray);
 }
