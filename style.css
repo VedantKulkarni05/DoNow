@@ -19,19 +19,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: #003973; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #e5e5be,
-    #003973
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #e5e5be,
-    #003973
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0052d4;
+  background: -webkit-linear-gradient(to bottom, #6fb1fc, #4364f7, #0052d4);
+  background: linear-gradient(to bottom, #6fb1fc, #4364f7, #0052d4);
 }
 
+/* styling for header */
 header {
   padding: 2rem 1rem;
   max-width: 800px;
@@ -119,7 +112,7 @@ main {
 }
 
 #Tasks .task .content {
-  flex: 1 1 0%; 
+  flex: 1 1 0%;
 }
 #Tasks .task .content .text {
   color: var(--light);

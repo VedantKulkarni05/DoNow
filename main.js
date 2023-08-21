@@ -47,6 +47,7 @@ window.addEventListener("load", () => {
 
     input.value = "";
 
+    // add event listener to the edit and delete buttons
     task_edit_element.addEventListener("click", () => {
       if (task_edit_element.innerText == "Edit") {
         task_input_element.removeAttribute("readonly");
@@ -59,7 +60,7 @@ window.addEventListener("load", () => {
     });
 
     task_delete_element.addEventListener("click", () => {
-      list_element.removeChild(task_element );
+      list_element.removeChild(task_element);
     });
   });
 });
